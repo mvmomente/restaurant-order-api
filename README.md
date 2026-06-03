@@ -16,7 +16,7 @@ Construir uma API REST para gerenciamento de pedidos, produtos e usuários em um
 
 ## Tecnologias
 
-* Java 21
+* Java 26
 * Spring Boot
 * Spring Data JPA
 * PostgreSQL

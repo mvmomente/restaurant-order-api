@@ -4,9 +4,9 @@
 
 Pessoa responsável por realizar pedidos e consultar o cardápio.
 
-## Garçom
+## Atendente
 
-Funcionário responsável por registrar e acompanhar pedidos dos clientes.
+Funcionário responsável por registrar e montagem final dos pedidos antes da entrega.
 
 ## Cozinheiro
 

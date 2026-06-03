@@ -8,7 +8,7 @@ Com ele será possível:
 
 * Registrar pedidos.
 * Acompanhar o status dos pedidos.
-* Organizar o fluxo entre garçom, cozinha e gerente.
+* Organizar o fluxo entre Atendente, cozinha e gerente.
 * Gerenciar produtos do cardápio.
 * Controlar acesso através de diferentes perfis de usuário.
 
@@ -22,7 +22,7 @@ Com ele será possível:
 * Criar pedidos.
 * Personalizar itens do pedido.
 
-### Garçom
+### Atendente
 
 * Criar pedidos.
 * Visualizar pedidos.

@@ -14,36 +14,44 @@ todo o fluxo de preparação e entrega dos produtos.
 
  Quem usara o sistema?
 
-* Usuario - Fara o pedido para a loja.
-* Garçom - Visualizar os pedidos e montara de acordo.
+* Cliente - Fara o pedido para a loja.
+* Atendente - Visualizar os pedidos e montara de acordo.
 * Cozinheiro - Responsavel por preparo dos alimentos.
 * Gerente - Controle sobre os pedidos e deinifição de demandas.
 * Administrador - Controle total sobre a aplicação.
 
 # O que cada pessoa faz?
+
+## Administrador
+* Gerenciar usuários.
+* Gerenciar permissões.
+
 ## Gerente:
 * Cadastrar produtos.
-* Ver pedidos.
-* Editar carápio.
-* Atribuir tarefas.
+* Editar produtos.
+* Visualizar pedidos.
+* Acompanhar operação.
 
 ## Cozinheiro:
-* Visualizar pedidos.
-* Visualizar itens de preparo (carne, batata, tudo que envolver preparo referente a cozinha).
+* Visualizar pedidos em preparo.
+* Iniciar preparo dos itens.
+* Finalizar preparo dos itens.
 
-## Garçom:
+## Atendente:
 * Criar pedidos.
 * Visualizar pedidos.
 * Definir status do pedido.
 
-## Usuario:
-* Visualizar cardapio.
-* Editar pedido (remover item do produto ou adicionar).
+## Cliente:
+* Visualizar cardápio.
+* Criar pedido.
+* Personalizar pedido.
+* Acompanhar status do pedido.
 
 # O que o sistema precisa armazenar?
 * Produtos.
 * Pedido.
-* Usuario.
+* Cliente.
 
 # O que preciso saber sobre cada coisa?
 ## Produto:
@@ -55,9 +63,9 @@ todo o fluxo de preparação e entrega dos produtos.
 * Data.
 * Status.
 * Valor.
-* Usuario.
+* Cliente.
 
-## Usuario:
+## Cliente:
 * Nome.
 * Email.
 * Senha.

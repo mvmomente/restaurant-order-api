@@ -1,0 +1,57 @@
+@startuml
+
+hide circle
+skinparam classAttributeIconSize 0
+
+class User {
+    +id
+    +name
+    +email
+    +password
+}
+
+class Role {
+    +id
+    +name
+}
+
+class Product {
+    +id
+    +name
+    +description
+    +price
+}
+
+class Order {
+    +id
+    +createdAt
+    +totalAmount
+    +status
+}
+
+class OrderItem {
+    +id
+    +quantity
+    +unitPrice
+    +subtotal
+}
+
+enum OrderStatus {
+    RECEIVED
+    IN_PREPARATION
+    READY
+    DELIVERED
+    CANCELED
+}
+
+Role "1" -- "N" User
+
+User "1" -- "N" Order
+
+Order "1" -- "N" OrderItem
+
+Product "1" -- "N" OrderItem
+
+Order --> OrderStatus
+
+@enduml

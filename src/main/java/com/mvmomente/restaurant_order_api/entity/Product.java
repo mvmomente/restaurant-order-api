@@ -1,6 +1,5 @@
 package com.mvmomente.restaurant_order_api.entity;
 
-import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 
 import java.math.BigDecimal;
@@ -25,7 +24,6 @@ public class Product {
     private BigDecimal price;
 
     @OneToMany(mappedBy = "product")
-    @JsonIgnore
     private List<OrderItem> orderItems = new ArrayList<>();
 
     public UUID getId() {

@@ -1,4 +1,7 @@
 package com.mvmomente.restaurant_order_api.dto.response;
 
-public class UserResponseDTO {
+public record UserResponseDTO(
+        String name,
+        String email
+) {
 }

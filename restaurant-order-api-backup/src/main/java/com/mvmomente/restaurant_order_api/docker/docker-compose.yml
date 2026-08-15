@@ -1,0 +1,15 @@
+services:
+  postgres:
+    image: postgres:17
+    ports:
+      - "5432:5432"
+    container_name: restaurant-bc
+    environment:
+      POSTGRES_USER: admin
+      POSTGRES_PASSWORD: 1234
+      POSTGRES_DB: app_db
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+volumes:
+  postgres_data:

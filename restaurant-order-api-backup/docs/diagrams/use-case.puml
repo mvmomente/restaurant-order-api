@@ -1,0 +1,61 @@
+@startuml
+
+left to right direction
+
+actor Cliente
+actor Cozinheiro
+actor Atendente
+actor Gerente
+actor Administrador
+
+rectangle "Sistema de Gestão de Restaurante" {
+
+    usecase "Realizar Login" as UC1
+
+    usecase "Visualizar Cardápio" as UC2
+    usecase "Criar Pedido" as UC3
+    usecase "Personalizar Pedido" as UC4
+    usecase "Acompanhar Pedido" as UC5
+
+    usecase "Visualizar Pedidos\nem Preparo" as UC6
+    usecase "Iniciar Preparo" as UC7
+    usecase "Finalizar Preparo" as UC8
+
+    usecase "Visualizar Pedidos\npara Montagem" as UC9
+    usecase "Montar Pedido" as UC10
+    usecase "Finalizar Montagem" as UC11
+
+    usecase "Cadastrar Produto" as UC12
+    usecase "Editar Produto" as UC13
+    usecase "Visualizar Pedidos" as UC14
+
+    usecase "Gerenciar Usuários" as UC15
+    usecase "Gerenciar Permissões" as UC16
+}
+
+Cliente --> UC1
+Cliente --> UC2
+Cliente --> UC3
+Cliente --> UC4
+Cliente --> UC5
+
+Cozinheiro --> UC1
+Cozinheiro --> UC6
+Cozinheiro --> UC7
+Cozinheiro --> UC8
+
+Atendente --> UC1
+Atendente --> UC9
+Atendente --> UC10
+Atendente --> UC11
+
+Gerente --> UC1
+Gerente --> UC12
+Gerente --> UC13
+Gerente --> UC14
+
+Administrador --> UC1
+Administrador --> UC15
+Administrador --> UC16
+
+@enduml

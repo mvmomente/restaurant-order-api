@@ -1,4 +1,9 @@
 package com.mvmomente.restaurant_order_api.dto.request;
 
-public class OrderItemRequestDTO {
+import java.util.UUID;
+
+public record OrderItemRequestDTO(
+        UUID productId,
+        Integer quantity
+) {
 }
